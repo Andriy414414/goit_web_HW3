@@ -1,6 +1,7 @@
 import time
 from multiprocessing import Pool, current_process, cpu_count
 
+
 #
 # def factorize(*numbers):
 #
@@ -65,9 +66,8 @@ if __name__ == '__main__':
     assert d == [1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, 140, 76079, 152158, 304316, 380395, 532553, 760790, 1065106,
                  1521580, 2130212, 2662765, 5325530, 10651060]
 
-
     elapsed_time = end_time - start_time
 
-    print(f"\ntime: {elapsed_time} seconds\n")  #час 1.95 з pool для заданих чисел, час 33.6 з pool для більших чисел,
+    print(f"\ntime: {elapsed_time} seconds\n")  # час 1.95 з pool для заданих чисел, час 33.6 з pool для більших чисел,
 
     print(a, b, c, d, sep="\n")
